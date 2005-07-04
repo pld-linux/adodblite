@@ -28,7 +28,7 @@ commands on your website. It gives you a smaller memory footprint and,
 as a side benefit, greatly improves speed.
 
 It currently supports the following DBMS: Frontbase, Max DB, Mini SQL,
-Microsoft SQL, MySql, PostgreSQL, SqLite and SyBase.
+Microsoft SQL, MySQL, PostgreSQL, SQLite and SyBase.
 
 %description -l pl
 ADOdb Lite powsta³a jako efekt zapotrzebowania na ma³y i szybki
@@ -41,7 +41,7 @@ strony napisanej z my¶l± o ADOdb. Wymaga mniejszej ilo¶ci pamiêci, a
 niejako efektem ubocznym jest znaczne przyspieszenie dzia³ania.
 
 Aktualnie wspierane silniki bazodanowe: Frontbase, Max DB, Mini SQL,
-Microsoft SQL, MySql, PostgreSQL, SqLite oraz SyBase.
+Microsoft SQL, MySQL, PostgreSQL, SQLite oraz SyBase.
 
 %prep
 %setup -q -n adodb_lite
