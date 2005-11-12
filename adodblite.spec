@@ -1,6 +1,6 @@
 
-%define _major  0
-%define _minor  07
+%define _major  1
+%define _minor  04
 
 Summary:	A very small, fast ADOdb library
 Summary(pl):	Bardzo ma³a i szybka biblioteka ADOdb
@@ -10,7 +10,7 @@ Release:	1
 Group:		Libraries
 License:	LGPL
 Source0:	http://dl.sourceforge.net/adodblite/adodb_lite%{_minor}.tar.gz
-# Source0-md5:	c814f47359d0ddd8f9a5d972310cb2ea
+# Source0-md5:	89a936307fcb1e273f3ad8023d536800
 URL:		http://adodblite.sourceforge.net/
 Requires:	php-pear >= 4.0.5
 BuildArch:	noarch
@@ -50,7 +50,7 @@ Microsoft SQL, MySQL, PostgreSQL, SQLite oraz SyBase.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/adodbSQL_drivers/{fbsql,maxdb,msql,mssql{,po},mysql{,i,t},postgres{,64,7},sqlite,sybase}
 
-cp -af *.php *.jpg adodbSQL_drivers \
+cp -af *.php adodbSQL_drivers \
 	$RPM_BUILD_ROOT%{php_pear_dir}/%{name}
 
 %clean
