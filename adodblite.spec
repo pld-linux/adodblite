@@ -1,4 +1,7 @@
 
+%bcond_with	tests		# build with tests
+%bcond_without	docs	# build without documentation
+
 %define _major  1
 %define _minor  04
 
@@ -50,10 +53,19 @@ PostgreSQL7, PostgreSQL8, SQLite, SQLite Pro, Sybase oraz Sybase ASE.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/adodbSQL_drivers/{fbsql,maxdb,msql,mssql{,po},mysql{,i,t},postgres{,64,7},sqlite,sybase}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/adodbSQL_drivers/{fbsql,maxdb,msql,mssql{,po},mysql{,i,t},postgres{,64,7,8},sqlite{,po},sybase{,_ase}}
 
-cp -af *.php adodbSQL_drivers \
+cp -af *.php adodbSQL_drivers generic_modules session \
 	$RPM_BUILD_ROOT%{php_pear_dir}/%{name}
+
+%if %{with docs}
+install -d $RPM_BUILD_ROOT%{_docdir}/%{name}
+cp -af documentation/* $RPM_BUILD_ROOT%{_docdir}/%{name}
+%endif
+
+%if %{with tests}
+cp -af tests $RPM_BUILD_ROOT%{php_pear_dir}/%{name}
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -61,3 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{php_pear_dir}/%{name}
+%if %{with docs}
+%{_docdir}/%{name}
+%endif
