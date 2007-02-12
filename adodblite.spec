@@ -6,7 +6,7 @@
 %define _minor  04
 
 Summary:	A very small, fast ADOdb library
-Summary(pl):	Bardzo ma³a i szybka biblioteka ADOdb
+Summary(pl.UTF-8):   Bardzo maÅ‚a i szybka biblioteka ADOdb
 Name:		adodblite
 Version:	%{_major}.%{_minor}
 Release:	1
@@ -34,15 +34,15 @@ It currently supports the following DBMS: Frontbase, Max DB, Mini SQL,
 MSSQL, MSSQL Pro, MySQLi, MySQLt, MySQL, PostgreSQL, PostgreSQL64,
 PostgreSQL7, PostgreSQL8, SQLite, SQLite Pro, Sybase and Sybase ASE.
 
-%description -l pl
-ADOdb Lite powsta³a jako efekt zapotrzebowania na ma³y i szybki
+%description -l pl.UTF-8
+ADOdb Lite powstaÅ‚a jako efekt zapotrzebowania na maÅ‚y i szybki
 zamiennik biblioteki ADOdb na potrzeby gry online nazwanej Alien
 Assault Traders. Biblioteka ta oferuje tylko ograniczony zestaw
-poleceñ i eliminuje wiêkszo¶æ rzadziej u¿ywanych na stronach WWW
-funkcji. Mo¿e z powodzeniem zastêpowaæ ADOdb w sytuacjach, gdy
-zaimplementowane funkcje wystarcz± do zachowania funkcjonalno¶ci
-strony napisanej z my¶l± o ADOdb. Wymaga mniejszej ilo¶ci pamiêci, a
-niejako efektem ubocznym jest znaczne przyspieszenie dzia³ania.
+poleceÅ„ i eliminuje wiÄ™kszoÅ›Ä‡ rzadziej uÅ¼ywanych na stronach WWW
+funkcji. MoÅ¼e z powodzeniem zastÄ™powaÄ‡ ADOdb w sytuacjach, gdy
+zaimplementowane funkcje wystarczÄ… do zachowania funkcjonalnoÅ›ci
+strony napisanej z myÅ›lÄ… o ADOdb. Wymaga mniejszej iloÅ›ci pamiÄ™ci, a
+niejako efektem ubocznym jest znaczne przyspieszenie dziaÅ‚ania.
 
 Aktualnie wspierane silniki bazodanowe: Frontbase, Max DB, Mini SQL,
 MSSQL, MSSQL Pro, MySQLi, MySQLt, MySQL, PostgreSQL, PostgreSQL64,
