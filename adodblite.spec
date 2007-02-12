@@ -6,7 +6,7 @@
 %define _minor  04
 
 Summary:	A very small, fast ADOdb library
-Summary(pl.UTF-8):   Bardzo mała i szybka biblioteka ADOdb
+Summary(pl.UTF-8):	Bardzo mała i szybka biblioteka ADOdb
 Name:		adodblite
 Version:	%{_major}.%{_minor}
 Release:	1
