@@ -1,6 +1,6 @@
 
 %bcond_with	tests		# build with tests
-%bcond_without	docs	# build without documentation
+%bcond_without	doc	# build without documentation
 
 %define _major  1
 %define _minor  04
@@ -58,7 +58,7 @@ install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/adodbSQL_drivers/{fbsql,maxdb,
 cp -af *.php adodbSQL_drivers generic_modules session \
 	$RPM_BUILD_ROOT%{php_pear_dir}/%{name}
 
-%if %{with docs}
+%if %{with doc}
 install -d $RPM_BUILD_ROOT%{_docdir}/%{name}
 cp -af documentation/* $RPM_BUILD_ROOT%{_docdir}/%{name}
 %endif
@@ -73,6 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{php_pear_dir}/%{name}
-%if %{with docs}
+%if %{with doc}
 %{_docdir}/%{name}
 %endif
