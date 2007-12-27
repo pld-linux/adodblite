@@ -3,17 +3,17 @@
 %bcond_without	doc	# build without documentation
 
 %define _major  1
-%define _minor  04
+%define _minor  42
 
 Summary:	A very small, fast ADOdb library
 Summary(pl.UTF-8):	Bardzo mała i szybka biblioteka ADOdb
 Name:		adodblite
 Version:	%{_major}.%{_minor}
-Release:	1
+Release:	0.1
 Group:		Libraries
 License:	LGPL
 Source0:	http://dl.sourceforge.net/adodblite/adodb_lite%{_major}.%{_minor}.tar.gz
-# Source0-md5:	c31dfa578072c05d2d4c8321d5d56322
+# Source0-md5:	c85b343c34a3e34de4a54b0dd046e338
 URL:		http://adodblite.sourceforge.net/
 Requires:	php-pear >= 4.0.5
 BuildArch:	noarch
